@@ -47,7 +47,7 @@ def smi_to_ass(smi_dir: str, save_dir: str, styles: list):
         with open(file, "rb") as f:
             file_encoding = chardet.detect(f.read())
         
-        with open(file, encoding=file_encoding.get("encoding")) as f:
+        with open(file, "r", encoding=file_encoding.get("encoding")) as f:
             lines = f.read()
             first_index = lines.index("<SYNC")
             smi_content = lines[first_index:]
