@@ -1,5 +1,13 @@
 # Subtitle convert (SMI to ASS)
 
+# How to use
+```bash
+# Default
+python main.py --smi_dir "./smi" --save_dir "./ass"
+
+# Add styles
+python main.py --smi_dir "./smi" --save_dir "./ass" --styles "1-Style" "2-Style" "3-Style"
+```
 
 ### Create conda env
 ```bash
